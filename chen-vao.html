@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let number = prompt('nhap so bat ki');
+  let num = number.toString();
+  let result = [num[0]];
+  let x = num.length;
+  for( let i = 1; i < x; i++) {
+      if(num[i]% 2 === 0 && num[i - 1] % 2 === 0){
+        result.push('-',num[i])
+      }else {
+          result.push(num[i])
+      }
+  }document.write(result.join(''));
+
+
+</script>
+</body>
+</html>
+<!--&& num[i - 1]% 2 === 0-->
